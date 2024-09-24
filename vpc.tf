@@ -45,7 +45,7 @@ resource "aws_eip" "demo-eip" {
 
 resource "aws_nat_gateway" "demo-natgateway" {
     subnet_id = aws_subnet.demo-vpc-public-subnet.id
-    allocatio_id = aws_eip.demo-eip.id
+    allocation_id = aws_eip.demo-eip.id
   
 }
 
